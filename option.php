@@ -1,6 +1,6 @@
 <?php
 if (!isset($_COOKIE["user"]) || !isset($_COOKIE["password"])) {
-  header("location: ./logIn_signUp.php");
+  header("location: ./index.php");
 }
 ?>
 <?php

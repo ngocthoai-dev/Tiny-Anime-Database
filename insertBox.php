@@ -2,7 +2,7 @@
 $conn = new mysqli("localhost", "animeDB", "animeDatabase", "animedb") or die("Cant connect database!");
 mysqli_query($conn, "set names utf8");
 if (!isset($_COOKIE["user"]) || !isset($_COOKIE["password"])) {
-  header("location: ./logIn_signUp.php");
+  header("location: ./index.php");
 }
 ?>
 <?php

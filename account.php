@@ -32,7 +32,7 @@ class user
         $msg = "<span class='text-warning'><br />Password or Username is not valid!<br />Username must be str += . | _ | space, 5-32 chars
   <br />Password must be str exist at least 1 of 0-9 & A-Z, 5-12 chars</span>";
         setcookie("msgLogIn", $msg, time() + 1, "/");
-        header("location: ./logIn_signUp.php");
+        header("location: ./index.php");
         return;
       }
       $found = false;
@@ -59,7 +59,7 @@ class user
           $msg = "Unexisted Account!";
         }
         setcookie("msgLogIn", $msg, time() + 1, "/");
-        header("location: ./logIn_signUp.php");
+        header("location: ./index.php");
       }
     }
   }
@@ -70,13 +70,13 @@ class user
         $msg = "<span class='text-warning'><br />Password or Username is not valid!<br />Username must be str += . | _ | space, 5-32 chars
   <br />Password must be str exist at least 1 of 0-9 & A-Z, 5-12 chars</span>";
         setcookie("msgSignUp", $msg, time() + 1, "/");
-        header("location: ./logIn_signUp.php");
+        header("location: ./index.php");
         return;
       }
       if ($_POST['password'] != $_POST['repassword']) {
         $msg = "Password and RePassword aint the same!";
         setcookie("msgSignUp", $msg, time() + 1, "/");
-        header("location: ./logIn_signUp.php");
+        header("location: ./index.php");
         return;
       }
       $found = false;
@@ -93,11 +93,11 @@ class user
         mysqli_query($GLOBALS['conn'], $query) or die("Cant select from db!");
         $msg = "Add Done!";
         setcookie("msgSignUp", $msg, time() + 1, "/");
-        header("location: ./logIn_signUp.php");
+        header("location: ./index.php");
       } else {
         $msg = "Existed Account!";
         setcookie("msgSignUp", $msg, time() + 1, "/");
-        header("location: ./logIn_signUp.php");
+        header("location: ./index.php");
       }
     }
   }
