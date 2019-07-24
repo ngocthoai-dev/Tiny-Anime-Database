@@ -1,0 +1,133 @@
+#background #mist1 {
+  position: fixed;
+  width: 100%;
+  top: 50px;
+  animation: mist1 infinite 15s linear;
+}
+
+#background #mist2 {
+  position: fixed;
+  width: 100%;
+  top: 150px;
+  animation: mist2 infinite 30s linear;
+}
+
+#background #mist3 {
+  position: fixed;
+  width: 100%;
+  top: 100px;
+  animation: mist3 infinite 20s linear;
+}
+
+#background #mist4 {
+  position: fixed;
+  width: 100%;
+  top: -100px;
+  animation: mist4 infinite 10s linear;
+}
+
+#background #mist5 {
+  position: fixed;
+  width: 100%;
+  top: -100px;
+  animation: mist5 infinite 12s linear;
+}
+
+#background #mist6 {
+  position: fixed;
+  width: 100%;
+  bottom: -100px;
+  animation: mist6 infinite 10s linear;
+}
+
+@keyframes mist1 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes mist2 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes mist3 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes mist4 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes mist5 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes mist6 {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+#pageContent #bulletBox {
+  position: relative;
+}
+
+#bulletBox img {
+  position: absolute;
+  height: 50%;
+  width: 10%;
+}
+
+#bulletBox #bullet1 {
+  right: 14%;
+  animation: sword1 infinite 2s linear;
+}
+
+#bulletBox #bullet2 {
+  display: inline-block;
+  animation: sword2 infinite 2s linear;
+}
+
+@keyframes sword1 {
+  0% {
+    transform: translateX(0%) scaleX(-1);
+  }
+  100% {
+    transform: translateX(-630%);
+  }
+}
+
+@keyframes sword2 {
+  0% {
+    transform: translateX(0%) scaleX(-1);
+  }
+  100% {
+    transform: translateX(630%);
+  }
+}

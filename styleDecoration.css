@@ -1,0 +1,136 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#background {
+  position: absolute;
+  background-image: url("https://images3.alphacoders.com/797/797882.png");
+  filter: sepia(50%);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#background img {
+  width: 100%;
+}
+
+#wrapper {
+  position: relative;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#bar {
+  background: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#bar #barOpt {
+  display: inline-block;
+  position: absolute;
+  right: 50px;
+  height: 70%;
+}
+
+#bar .barOption {
+  border: 1px solid snow;
+  background: black;
+}
+
+.barOption h5 {
+  color: white;
+  margin: 0;
+  margin-bottom: 0.2rem;
+}
+
+#pageContent {
+  padding-top: 10%;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-content: center;
+}
+
+.option {
+  margin: 0 5%;
+}
+
+.option button {
+  border: 1px solid snow;
+  background: black;
+  border-radius: 5px;
+}
+
+.option h4 {
+  margin: 0.5rem;
+  margin-top: 0.2rem;
+  color: white;
+}
+
+.logIn_signUpCard {
+  display: none;
+  position: fixed;
+  top: 30%;
+  left: 35%;
+  width: 30%;
+  z-index: 10;
+}
+
+.rest {
+  top: 0;
+  display: none;
+  z-index: 5;
+}
+
+#bulletBox input {
+  border-radius: 10px;
+  background: rgb(231, 231, 231);
+}
+
+#topPageNum button {
+  width: 35px;
+  background: rgb(200, 250, 255);
+  border: 1px solid azure;
+}
+
+#topPageNum .numPageActive {
+  background: rgb(85, 211, 194);
+}
+
+.animePage {
+  display: none;
+}
+
+.pageActive {
+  display: contents;
+}
+
+.animeInfoCard {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 15%;
+  width: 70%;
+  z-index: 15;
+}
+
+.animeInfoCard img {
+  height: 250px;
+}
